@@ -1,4 +1,22 @@
 const input_integer = require('..')
 
-const x = input_integer()
-document.body.append(x)
+const input1 = input_integer()
+const input2 = input_integer()
+title = 'demo form'
+subTitle = 'Please fill out the details:'
+
+const page = document.createElement('div')
+
+page.innerHTML = `
+    <h1> ${title} </h1>
+    <h2> ${subTitle} </h2>
+    <h3> Enter your age </h3>
+    <x></x>
+    <h3> Enter your year of birth </h3>
+    <y></y>
+    `
+
+page.querySelector('x').replaceWith(input1)
+page.querySelector('y').replaceWith(input2)
+
+document.body.append(page)

@@ -1,8 +1,26 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const input_integer = require('..')
 
-const x = input_integer()
-document.body.append(x)
+const input1 = input_integer()
+const input2 = input_integer()
+title = 'demo form'
+subTitle = 'Please fill out the details:'
+
+const page = document.createElement('div')
+
+page.innerHTML = `
+    <h1> ${title} </h1>
+    <h2> ${subTitle} </h2>
+    <h3> Enter your age </h3>
+    <x></x>
+    <h3> Enter your year of birth </h3>
+    <y></y>
+    `
+
+page.querySelector('x').replaceWith(input1)
+page.querySelector('y').replaceWith(input2)
+
+document.body.append(page)
 },{"..":2}],2:[function(require,module,exports){
 module.exports = input_integer
 
