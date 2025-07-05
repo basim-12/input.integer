@@ -1,28 +1,31 @@
 {
  "name": "@basim.asim123/input.integer",
-  "version": "0.0.1",
-  "description": "ui component",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "budo demo/demo.js:bundle.js --live --open",
-    "build": "browserify demo/demo.js > bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/basim-12/input.integer.git"
-  },
-  "keywords": [
-    "slider"
-  ],
-  "author": "basim",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/basim-12/input.integer/issues"
-  },
-  "homepage": "https://github.com/basim-12/input.integer#readme",
-  "devDependencies": {
-    "browserify": "^17.0.1",
-    "budo": "^11.8.4"
-  }
+ "version": "0.0.2",
+ "description": "ui component",
+ "main": "src/index.js",
+ "scripts": {
+  "start": "budo demo/demo.js:bundle.js --live --open",
+  "build": "browserify demo/demo.js > bundle.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/basim-12/input.integer.git"
+ },
+ "keywords": [
+  "slider"
+ ],
+ "author": "basim",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/basim-12/input.integer/issues"
+ },
+ "homepage": "https://github.com/basim-12/input.integer#readme",
+ "devDependencies": {
+  "browserify": "^17.0.1",
+  "budo": "^11.8.4"
+ },
+ "dependencies": {
+  "@basim.asim123/input.integer": "^0.0.1"
+ }
 }

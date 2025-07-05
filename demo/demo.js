@@ -1,4 +1,4 @@
-const input_integer = require('..')
+const input_integer = require('@basim.asim123/input.integer')
 
 const input1 = input_integer({min:1, max:150})
 const input2 = input_integer({min:1875, max:2025})
