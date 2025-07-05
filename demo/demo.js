@@ -1,7 +1,7 @@
 const input_integer = require('..')
 
-const input1 = input_integer()
-const input2 = input_integer()
+const input1 = input_integer({min:1, max:150})
+const input2 = input_integer({min:1875, max:2025})
 title = 'demo form'
 subTitle = 'Please fill out the details:'
 
