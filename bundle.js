@@ -10,7 +10,7 @@ const sheet = new CSSStyleSheet()
 const theme = get_theme()
 sheet.replaceSync(theme)
 
-function inputInteger () {
+function input_integer () {
   const el = document.createElement('div')
   const shadow = el.attachShadow({ mode: 'closed' })
 
